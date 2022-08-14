@@ -14,4 +14,4 @@ https://yoga-sewa.github.io
 
 
 ## Feedback
-If you have any feedback, please reach out to us at [yogasewa3@gmail.com](mailto:yogasewa3@gmail.com)
+If you have any feedback, please reach out to us at [yogasewa3@gmail.com](https://yoga-sewa.github.io/contact.html)
