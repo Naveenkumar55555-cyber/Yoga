@@ -1,4 +1,4 @@
-select.addEventListener('change', () => {
+document.getElementById('select').addEventListener('change', () => {
     const asanas = fetch('https://yoga-sewa-api.herokuapp.com/asanas')
         .then((res) => {
             return res.json()
