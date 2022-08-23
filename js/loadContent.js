@@ -8,4 +8,4 @@ document.getElementById('select').addEventListener('change', () => {
             document.getElementById('body').innerText = data[select.selectedIndex - 1].body;
             document.getElementById('img').src = data[select.selectedIndex - 1].img;
         });
-})
+});
