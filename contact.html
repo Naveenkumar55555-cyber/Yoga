@@ -15,6 +15,14 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
     <!-- Custom JS -->
     <script defer src="./js/contact-form.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("hq-Bay4QtqEJTikKn");
+		})();
+	</script>
 </head>
 <body>
     <!-- Navbar -->
@@ -61,21 +69,18 @@
     <main class="uk-container">
         <h1 class="uk-text-large uk-text-center">Contact Us</h1>
         <p id="contact-form-status" class="uk-text-danger uk-text-small uk-text-center"></p>
-        <form id="contact-form" class="uk-form-stacked" action="https://formspree.io/f/xknenzpa" method="POST">
-            <input type="text" name="_honey" style="display: none;" hidden>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://yoga-sewa.github.io/success.html">
+        <form id="form" class="uk-form-stacked">
             <label class="uk-form-label"><b>Name</b></label>
-            <input class="uk-input" type="text" name="name" placeholder="Your Name" required>
+            <input class="uk-input" type="text" id="_name" placeholder="Your Name" required>
             <br><br>
             <label class="uk-form-label"><b>Email</b></label>
-            <input class="uk-input" type="email" name="mail" placeholder="Your Email" required>
+            <input class="uk-input" type="email" id="_mail" placeholder="Your Email" required>
             <br><br>
             <label class="uk-form-label"><b>Message</b></label>
-            <textarea class="uk-textarea" name="message" rows="4" style="resize: none;"
+            <textarea class="uk-textarea" id="_message" rows="4" style="resize: none;"
                 placeholder="Your Message Here"></textarea>
             <br><br>
-            <button class="uk-button uk-button-primary uk-width-1">Send Email</button>
+            <button class="uk-button uk-button-primary uk-width-1" onclick="sendMail();">Send Email</button>
         </form>
     </main>
 </body>
