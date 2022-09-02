@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then((options) => {
             let out = "";
 
-            for (option of options) {
+            for (let option of options) {
                 out += `
                     <option>${option.name.en}</option>
                 `;
