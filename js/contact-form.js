@@ -2,7 +2,7 @@ function sendMail() {
     Email.send({
         SecureToken : "9b2898ee-d697-43bd-bafc-8298ee2c3011",
         To : 'yogasewa3@gmail.com',
-        From : document.getElementById('_mail').value,
+        From : 'yogasewa3@gmail.com',
         Subject : "This is the subject",
         Body : `Name: ${document.getElementById('_name').value} <br>
                 Email: ${document.getElementById('_mail').value} <br>
