@@ -10,6 +10,7 @@ function sendMail() {
     }).then(
       message => alert(message)
     );
+    reset();
 }
 
 function reset() {
