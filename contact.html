@@ -1,81 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="./css/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga SEWA | Contact</title>
-    <link rel="stylesheet" href="./css/uds.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css"/>
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    <!-- Custom JS -->
-    <script defer src="./js/contact-form.js"></script>
-    <!-- SMTP JS -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>YogaSEWA | Contact</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/main.css">
+    <script defer src="/js/form.js"></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <a class="uk-navbar-item uk-logo" href="/index.html">Yoga SEWA</a>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-visible@s">
-                    <a href="./index.html"><span class="uk-icon uk-margin-small-right" uk-icon="home"></span>Home</a>
-                </li>
-                <li class="uk-visible@s">
-                    <a href="./about.html"><span class="uk-icon uk-margin-small-right" uk-icon="info"></span>About
-                        Us</a>
-                </li>
-                <li class="uk-active uk-visible@s">
-                    <a href="./contact.html"><span class="uk-icon uk-margin-small-right"
-                            uk-icon="mail"></span>Contact</a>
-                </li>
-                <li class="uk-active">
-                    <a class="uk-navbar-toggle uk-hidden@s uk-active" href="#offcanvas-nav" uk-toggle><span
-                            class="uk-icon" uk-icon="menu"></span>Menu
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Offcanvas Navbar -->
-    <div id="offcanvas-nav" uk-offcanvas="overlay: true mode: reveal">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <p class="uk-logo uk-flex-center">Menu</p>
-            <ul class="uk-nav uk-nav-default">
-                <li><a href="./index.html"><span class="uk-icon uk-margin-small-right" uk-icon="home"></span>Home</a>
-                </li>
-                <li><a href="./about.html"><span class="uk-icon uk-margin-small-right" uk-icon="info"></span>About
-                        Us</a>
-                </li>
-                <li class="uk-active"><a href="./contact.html"><span class="uk-icon uk-margin-small-right"
-                            uk-icon="mail"></span>Contact</a></li>
-            </ul>
-        </div>
+    <hr>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="brand" style="cursor: default;">YogaSEWA</a>
+                <div class="nav-right">
+                    <div class="tabs">
+                        <a style="cursor: pointer;" href="index.html"><i class="bi bi-house"></i>&nbsp;Home</a>&nbsp;
+                        <a style="cursor: pointer;" href="about.html"><i class="bi bi-info-circle"></i>&nbsp;About</a>&nbsp;
+                        <a style="cursor: pointer;" class="active"><i class="bi bi-envelope"></i>&nbsp;Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-    <!-- Contact Form -->
-    <main class="uk-container">
-        <h1 class="uk-heading-divider uk-text-primary uk-text-center">Contact Us</h1>
-        <br>
-        <p id="contact-form-status" class="uk-text-danger uk-text-small uk-text-center"></p>
-        <form id="form" class="uk-form-stacked" onsubmit="sendMail(); return false;">
-            <label class="uk-form-label"><b>Name</b></label>
-            <input class="uk-input" type="text" id="_name" placeholder="Your Name" required>
-            <br><br>
-            <label class="uk-form-label"><b>Email</b></label>
-            <input class="uk-input" type="email" id="_mail" placeholder="Your Email" required>
-            <br><br>
-            <label class="uk-form-label"><b>Message</b></label>
-            <textarea class="uk-textarea" id="_message" rows="4" style="resize: none;"
-                placeholder="Your Message.."></textarea>
-            <br><br>
-            <button class="uk-button uk-button-primary uk-width-1" type="submit">Send Email</button>
+    <hr>
+    <main class="container">
+        <h1 class="text-center text-primary">Contact Us</h1>
+        <hr>
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <label for="_name"><h5>Name</h5></label>
+                    <input type="text" name="name" id="_name" placeholder="Your Name">
+                </div>
+                <div class="col-6">
+                    <label for="_email"><h5>Email</h5></label>
+                    <input type="email" name="email" id="_email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="_msg"><h5>Message</h5></label>
+                    <textarea rows="6" name="msg" id="_msg" placeholder="Your Message..." style="resize: none;"></textarea>
+                </div>
+            </div>
+            <br>
+            <button class="is-full-width" type="submit">Send</button>
         </form>
     </main>
 </body>

@@ -1,73 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="shortcut icon" href="./css/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga SEWA | Home</title>
-    <link rel="stylesheet" href="./css/uds.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    <!-- My JS -->
-    <script defer src="/js/optionLoad.js"></script>
+    <title>YogaSEWA | Home</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/main.css">
     <script defer src="/js/loadContent.js"></script>
+    <script defer src="/js/optionLoad.js"></script>
 </head>
-
 <body>
     <!-- Navbar -->
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <a class="uk-navbar-item uk-logo" href="/index.html">Yoga SEWA</a>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active uk-visible@s">
-                    <a href="./index.html"><span class="uk-icon uk-margin-small-right" uk-icon="home"></span>Home</a>
-                </li>
-                <li class="uk-visible@s">
-                    <a href="./about.html"><span class="uk-icon uk-margin-small-right" uk-icon="info"></span>About
-                        Us</a>
-                </li>
-                <li class="uk-visible@s">
-                    <a href="./contact.html"><span class="uk-icon uk-margin-small-right"
-                            uk-icon="mail"></span>Contact</a>
-                </li>
-                <li class="uk-active">
-                    <a class="uk-navbar-toggle uk-hidden@s uk-active" href="#offcanvas-nav" uk-toggle><span
-                            class="uk-icon" uk-icon="menu"></span>Menu</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Offcanvas Navbar -->
-    <div id="offcanvas-nav" uk-offcanvas="overlay: true mode: reveal">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <p class="uk-logo uk-flex-center">Menu</p>
-            <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="./index.html"><span class="uk-icon uk-margin-small-right"
-                            uk-icon="home"></span>Home</a></li>
-                <li><a href="./about.html"><span class="uk-icon uk-margin-small-right" uk-icon="info"></span>About
-                        Us</a></li>
-                <li><a href="./contact.html"><span class="uk-icon uk-margin-small-right"
-                            uk-icon="mail"></span>Contact</a></li>
-            </ul>
-        </div>
+    <hr>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="brand" style="cursor: default;">YogaSEWA</a>
+                <div class="nav-right">
+                    <div class="tabs">
+                        <a style="cursor: pointer;" class="active"><i class="bi bi-house"></i>&nbsp;Home</a>&nbsp;
+                        <a style="cursor: pointer;" href="about.html"><i class="bi bi-info-circle"></i>&nbsp;About</a>&nbsp;
+                        <a style="cursor: pointer;" href="contact.html"><i class="bi bi-envelope"></i>&nbsp;Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-    <!-- Body -->
-    <main class="uk-container">
-        <select name="asana" id="select" class="uk-select uk-width-1-1">
+    <hr>
+    <br>
+    <main class="container">
+        <select name="asana" id="select">
             <option disabled hidden selected>Select an Option...</option>
             <!-- put in by js -->
         </select>
-        <h1 class="uk-text-large" id="name"></h1>
-        <h1 class="uk-text-meta" id="body"></h1>
-        <img id="img" width="300" height="300">
+        <br>
+        <h2 id="name"></h2>
+        <h4 class="text-grey" id="body"></h4>
+        <br>
+        <div id="img"></div>
     </main>
 </body>
-
 </html>
