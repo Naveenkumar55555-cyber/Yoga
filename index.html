@@ -7,8 +7,8 @@
     <title>YogaSEWA | Home</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/assets/main.css">
-    <script defer src="/js/loadContent.js"></script>
-    <script defer src="/js/optionLoad.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
+    <script defer src="/js/content.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -30,7 +30,7 @@
     <hr>
     <br>
     <main class="container">
-        <select name="asana" id="select">
+        <select id="select">
             <option disabled hidden selected>Select an Option...</option>
             <!-- put in by js -->
         </select>
