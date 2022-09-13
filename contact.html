@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Website for our SEWA Project">
     <title>YogaSEWA | Contact</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="/assets/main.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="/js/form.js"></script>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <script defer src="/js/color-theme.js"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <hr>
     <div class="container">
         <nav class="nav">
             <div class="nav-left">
-                <a class="brand" style="cursor: default;">YogaSEWA</a>
+                <a href="/index.html" class="brand" style="cursor: default;">YogaSEWA</a>
                 <div class="nav-right">
                     <div class="tabs">
                         <a style="cursor: pointer;" href="index.html"><i class="bi bi-house"></i>&nbsp;Home</a>&nbsp;
-                        <a style="cursor: pointer;" href="about.html"><i class="bi bi-info-circle"></i>&nbsp;About</a>&nbsp;
-                        <a style="cursor: pointer;" class="active"><i class="bi bi-envelope"></i>&nbsp;Contact</a>
+                        <a style="cursor: pointer;" href="about.html"><i
+                                class="bi bi-info-circle"></i>&nbsp;About</a>&nbsp;
+                        <a style="cursor: pointer;" href="contact.html" class="active"><i class="bi bi-envelope"></i>&nbsp;Contact</a>
                     </div>
                 </div>
             </div>
@@ -31,22 +36,28 @@
     </div>
     <hr>
     <main class="container" x-data="">
-        <h1 class="text-center text-primary">Contact Us</h1>
+        <h1 class="text-center text-primary">Contact Us</h1><h2></h2><h3></h3><h4></h4>
         <hr>
         <form @submit.prevent>
             <div class="row">
                 <div class="col-6">
-                    <label for="_name"><h5>Name</h5></label>
+                    <label for="_name">
+                        <h5>Name</h5>
+                    </label>
                     <input type="text" id="_name" placeholder="Your Name">
                 </div>
                 <div class="col-6">
-                    <label for="_email"><h5>Email</h5></label>
+                    <label for="_email">
+                        <h5>Email</h5>
+                    </label>
                     <input type="email" id="_mail" placeholder="Your Email">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <label for="_msg"><h5>Message</h5></label>
+                    <label for="_msg">
+                        <h5>Message</h5>
+                    </label>
                     <textarea rows="6" id="_msg" placeholder="Your Message..." style="resize: none;"></textarea>
                 </div>
             </div>
@@ -56,4 +67,5 @@
     </main>
     <br>
 </body>
+
 </html>
