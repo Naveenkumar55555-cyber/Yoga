@@ -32,7 +32,7 @@
     <main class="container" x-data="">
         <h1 class="text-center text-primary">Contact Us</h1>
         <hr>
-        <form x-on:submit.prevent>
+        <form @submit.prevent>
             <div class="row">
                 <div class="col-6">
                     <label for="_name"><h5>Name</h5></label>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <br>
-            <button class="is-full-width" type="submit" x-on:click="sendMail()">Send</button>
+            <button class="is-full-width" type="submit" @click="sendMail()">Send</button>
         </form>
     </main>
     <br>
