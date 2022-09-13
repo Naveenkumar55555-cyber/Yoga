@@ -7,6 +7,7 @@
     <title>YogaSEWA | Contact</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/main.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="/js/form.js"></script>
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
@@ -28,10 +29,10 @@
         </nav>
     </div>
     <hr>
-    <main class="container">
+    <main class="container" x-data="">
         <h1 class="text-center text-primary">Contact Us</h1>
         <hr>
-        <form x-on:submit.prevent="sendMail()">
+        <form x-on:submit.prevent>
             <div class="row">
                 <div class="col-6">
                     <label for="_name"><h5>Name</h5></label>
@@ -49,7 +50,7 @@
                 </div>
             </div>
             <br>
-            <button class="is-full-width" type="submit">Send</button>
+            <button class="is-full-width" type="submit" x-on:click="sendMail()">Send</button>
         </form>
     </main>
     <br>
