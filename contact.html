@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/main.css">
     <script defer src="/js/form.js"></script>
-    <script defer src="https://unpkg.com/alipnejs"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -31,7 +31,7 @@
     <main class="container">
         <h1 class="text-center text-primary">Contact Us</h1>
         <hr>
-        <form @submit.prevent="sendMail();">
+        <form x-on:submit.prevent="sendMail()">
             <div class="row">
                 <div class="col-6">
                     <label for="_name"><h5>Name</h5></label>
