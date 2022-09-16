@@ -7,9 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let out = "";
 
             for (let option of options) {
-                out += `
-                    <option>${option.name.en}</option>
-                `;
+                out += `<option>${option.name.en}</option>`;
             }
             document.getElementById('select').innerHTML += out;
         });
