@@ -5,8 +5,8 @@ function sendMail() {
         From: 'yogasewa3@gmail.com',
         Subject: "New Submission on Contact Form",
         Body: `Name: ${document.getElementById('_name').value} <br>
-                Email: ${document.getElementById('_mail').value} <br>
-                Message: ${document.getElementById('_msg').value}`
+               Email: ${document.getElementById('_mail').value} <br>
+               Message: ${document.getElementById('_msg').value}`
     }).then(
         message => alert(message)
     );
