@@ -7,9 +7,9 @@ function sendMail() {
         Body: `Name: ${document.getElementById('_name').value} <br>
                Email: ${document.getElementById('_mail').value} <br>
                Message: ${document.getElementById('_msg').value}`
-    }).then(
-        message => alert(message)
-    );
+    }).then((message) => {
+        alert(message);
+    });
     reset();
 }
 
