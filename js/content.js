@@ -1,7 +1,7 @@
 const select = document.getElementById('select');
 
 document.addEventListener('DOMContentLoaded', () => {
-    axios.get('https://nextjs-api-black.vercel.app/api/asanas')
+    axios.get('https://yogasewaapi.herokuapp.com/asanas')
         .then((options) => {
             options = options.data;
             let out = "";
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 select.addEventListener('change', () => {
-    axios.get('https://nextjs-api-black.vercel.app/api/asanas')
+    axios.get('https://yogasewaapi.herokuapp.com/asanas')
         .then((data) => {
             data = data.data;
             document.getElementById('name').innerText = data[select.selectedIndex - 1].name.en;
