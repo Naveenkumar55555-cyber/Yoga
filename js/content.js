@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 select.addEventListener('change', () => {
-    axios.get(`https://yogasewaapi.herokuapp.com/asanas/${select.selectedIndex}`)
+    axios.get(`https://yogasewaapi.herokuapp.com/asanas/${select.selectedIndex + 1}`)
         .then((data) => {
             data = data.data;
             document.getElementById('name').innerText = data.name.en;
